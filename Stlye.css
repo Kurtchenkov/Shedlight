@@ -11,6 +11,12 @@ header {
     padding: 10px 0;
     text-align: center;
 }
+    img {
+    max-width: 100px; /* Adjust the size as needed */
+    height: auto;
+    display: block; /* Ensures proper spacing */
+    margin: 0 auto; /* Centers the logo if needed */
+}
 
 nav ul {
     list-style-type: none;
