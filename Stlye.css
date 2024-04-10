@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center; /* Center aligns all content in the body */
+    text-align:center; /* Center aligns all content in the body */
 }
 
 header {
