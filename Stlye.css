@@ -7,20 +7,22 @@ body {
     background-image: url('Shedlight (3).png');
     background-size: cover; /* Ensures the image covers the entire background */
     background-repeat: no-repeat; /* Prevents the image from repeating */
+    text-align: center; /* Centers content horizontally */
 }
 
 header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-    text-align: center;
+    text-align: center; /* Centers content horizontally */
+    margin: 0 auto; /* Centers the header horizontally */
 }
 
 img {
     max-width: 100px; /* Adjust the size as needed */
     height: auto;
     display: block; /* Ensures proper spacing */
-    margin: 0 auto; /* Centers the logo if needed */
+    margin: 0 auto; /* Centers the logo horizontally */
 }
 
 nav ul {
@@ -41,6 +43,8 @@ nav ul li a {
 
 main {
     padding: 20px;
+    margin: 0 auto; /* Centers the main content horizontally */
+    text-align: left; /* Aligns text content to the left within main */
 }
 
 footer {
@@ -48,4 +52,5 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    margin: 0 auto; /* Centers the footer horizontally */
 }
