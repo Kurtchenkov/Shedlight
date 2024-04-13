@@ -1,15 +1,32 @@
 /* General Styles */
+header img {
+    max-width: 50px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures proper spacing */
+    margin: 0 auto; /* Centers the logo horizontally */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align:center; /* Center aligns all content in the body */
+    text-align:justify; /* Center aligns all content in the body */
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(43, 156, 194);
+}
+    
 }
 
 nav ul {
@@ -30,7 +47,6 @@ nav ul li a {
 
 main {
     padding: 20px;
-    text-align: left; /* Reset text alignment for main content */
 }
 
 footer {
