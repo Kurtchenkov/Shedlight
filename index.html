@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shedlight Website</title>
     <style>
+        @keyframes flash {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .flash-text {
+            animation: flash 1s infinite;
+        }
         body {
             display: flex;
             justify-content: center;
@@ -14,7 +22,6 @@
             background-color: lightblue;
             font-family: Arial, sans-serif;
         }
-
         main {
             max-width: 800px;
             padding: 20px;
@@ -22,12 +29,16 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="Shedlight-removebg-preview.png" alt="Shedlight Logo">
-                <!-- Navigation code goes here -->
+        <img src="/images/Shedlight-removebg-preview.png" alt="Shedlight Logo">
+        <!-- Navigation code goes here -->
     </header>
     
     <main>
@@ -35,12 +46,6 @@
             <h1>Welcome to Shedlight😜</h1>
             <h1>About Shedlight</h1>
             <pre>
-                <style>
-                    pre {
-                        background-color: rgb(236, 244, 247);
-                        font-family: Arial, Arial;
-                    }
-                </style>
                 At Shedlight, we believe in nurturing and guiding individuals, 
                 families, and communities on their journey of faith and personal 
                 growth. Our mission is to illuminate paths of understanding, love, 
@@ -75,14 +80,39 @@
         <section id="contact">
             <h2>Contact Us</h2>
             <p>Get in touch with us e-mail: kurt@shedlight.org.za</p>
-            <p>Mobile Number:               +27 60 882 1649</p>
-            <p>WhatsApp:                    +27 79 708 7982</p> 
-                </main>
+            <p>Mobile Number: +27 60 882 1649</p>
+            <p>WhatsApp: +27 79 708 7982 <span class="flash-text">[Preferred method of communication]</span></p>
+        </section>
+    </main>
 
     <footer>
+        <div>
+            <pre>Join our Community on these platforms</pre>
+        </div>
+         
+        <div>
+            <a href="https://discord.gg/PHgGCFNE">
+                <img src="/images/Discord Logo.png" height="50" alt="Join Shedlight on Discord" title="Join Shedlight Community on Discord">
+            </a>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=100064638791743">
+                <img src="/images/facebook.png" height="50" alt="Join Shedlight on Facebook" title="Join Shedlight Community on Facebook">
+            </a>
+        </div>
+                
+        <a href="https://discord.gg/PHgGCFNE">
+            <img src="/images/prayer.jpg" height="200" alt="These are praying hands" title="Morning Devotion">
+        </a>
+
         <p>&copy; 2024 Shedlight. All rights reserved.</p>
     </footer>
 
-    <script src="index.js"></script>
+    <script>
+        // Optional: Stop flashing after a certain duration
+        setTimeout(() => {
+            document.querySelector('.flash-text').style.animation = 'none';
+        }, 5000); // Stop flashing after 5 seconds (adjust as needed)
+    </script>
 </body>
 </html>
