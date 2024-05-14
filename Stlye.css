@@ -4,6 +4,7 @@ header img {
     height: auto; /* Maintain aspect ratio */
     display: block; /* Ensures proper spacing */
     margin: 0 auto; /* Centers the logo horizontally */
+    <head> section of your HTML:
 }
 
 body {
